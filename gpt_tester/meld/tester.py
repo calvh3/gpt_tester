@@ -4,7 +4,7 @@ from Levenshtein import ratio as levenshtein_ratio
 from gpt_tester.helper import generate
 
 
-class MELDTest:
+class MELDTestCase:
     """
     Creates a MELD test case object from a single text string question: q
     test method generates:
@@ -17,7 +17,7 @@ class MELDTest:
         self.openai_model = openai_model
         self.encoding = tiktoken.encoding_for_model(openai_model)
 
-    def _test(self):
+    def test(self):
         """
         Split q into two halves: q1 and q2;
         Tokenize q2 using T: t2 = T(q2);
