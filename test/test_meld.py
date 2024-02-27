@@ -33,7 +33,7 @@ if __name__ == "__main__":
 
     Y = 0.95
     Z = get_Z(qapairs, Y)
-    print(f"{100*Z}% of test cases pass MELD check")
+    print(f"{100*(1-Z)}% of test cases pass MELD check")
 
     # To check specific test cases access the different objects stored
     first_example = qapairs[0]
